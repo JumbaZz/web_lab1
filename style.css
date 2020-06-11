@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+body{
+    background: url('img/background-pc.jpg');
+}
+
+.myPhoto{
+    width: 30%;
+    height: 30%;
+    border: 1px solid black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.myContainer{
+    background-color: rgba(229, 229, 229, 0.7);
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid black;
+    padding: 20px;
+    height: auto;
+    width: 50%;
+}
+.txt_div{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+ul{
+    list-style: none;
+}
+
+ul li:before {
+    content:  "-";
+    position: relative;
+    margin-right: 10px;
+}
+
+.up{
+    display: flex;
+}
+
+.myContacts{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    position: relative;
+    left: 100%;
+    transform: translate(-100%,0);
+}
+
+
+.text_div{
+    margin-left: 40px;
+    width: 100%;
+}
+
+.mySkills{
+    margin: 7% 0;
+    margin-left: 10%;
+}
+
+a:hover{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 450px){
+    body{
+        background: url('img/background-mobile.jpg');
+    }
+    .myContainer,.up, .down{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    h1,p,label,li,a,h2{
+        font-size: 18px;
+    }
+    h1{
+        margin-top: 2%;
+    }
+    .text_div{
+        margin: 0;
+    }
+
+    .myContainer{
+        width: 80%;
+
+    }
+
+    .myPhoto{
+        width: 80%;
+    }
+
+    .mySkills{
+        margin: 0;
+        margin-bottom: 5%;
+    }
+
+    .myContacts{
+        position: relative;
+        float: right;
+        width: 100%;
+    }
+
+    h2,label,p,h1{
+        font-weight: 400;
+    }
+}
